@@ -20,7 +20,7 @@
 	</form>
 
 	<div id="page-wrapper">
-		<%-- <c:import		></c:import> --%>
+		<c:import url="/WEB-INF/fragments/tableauProduits.jsp"> </c:import>
 	</div>
 </body>
 </html>
