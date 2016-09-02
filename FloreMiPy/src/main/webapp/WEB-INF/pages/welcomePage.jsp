@@ -20,7 +20,7 @@
 	</form>
 
 	<div id="page-wrapper">
-		<c:import url="/WEB-INF/carte/carte.jsp"></c:import>
+		<%-- <c:import		></c:import> --%>
 	</div>
 </body>
 </html>

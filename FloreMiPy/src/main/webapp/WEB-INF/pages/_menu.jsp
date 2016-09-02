@@ -1,10 +1,10 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<%-- <c:if test="${pageContext.request.userPrincipal.name != null}"> --%>
+<%-- <c:if test="${pageContext.request.userPrincipal.name == null}"> --%>
 	<div style="border: 1px solid #ccc; padding: 5px; margin-bottom: 20px;">
 
 		<a href="${pageContext.request.contextPath}/connexion">Connexion</a> <a
-			href="${pageContext.request.contextPath}/welcome">S'inscrire</a>
+			href="${pageContext.request.contextPath}/inscription">S'inscrire</a>
 
 	</div>
 <%-- </c:if> --%>
