@@ -26,7 +26,7 @@
 			<td>12</td>
 			<td>la vie</td>
 			<td><input type="number" value="1"></td>
-			<td><input type="checkbox" id="${item.id}"></td>
+			<td><input type="checkbox" id="8"></td>
 		</tr>
 	</c:forEach>
 	</tbody>
