@@ -1,23 +1,29 @@
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 	<form>
 	<input type="text" style="width: 100%; ">
 	<table style="width:100%;">
-	<tr>
-		<td>Image</td>
-		<td width="50%">Produit</td>
-		<td width="5%">Quantité en Stock</td>
-		<td>Delai approvisionnement</td>
-		<td style="width: 138px; ">Quantité Voulue</td>
-		<td width="20%" style="width: 104px; ">Ajouter au panier</td>
-	</tr>
-	<tr>
-	<td></td>
-	<td>Fleur de nuage</td>
-	<td>57</td>
-	<td>15 jours</td>
-	<td><input type="number" value="1" pattern=""></td>
-	<td><input type="button" style="width: 71px; "></td>
-	
-	</tr>
-	
+	<thead>
+		<tr>
+			<td>Image</td>
+			<td width="50%">Produit</td>
+			<td width="5%">Quantité en Stock</td>
+			<td>Delai approvisionnement</td>
+			<td style="width: 138px; ">Quantité Voulue</td>
+			<td width="20%" style="width: 104px; ">Ajouter au panier</td>
+		</tr>
+	</thead>
+	<tbody>
+	<c:forEach items="${list}" var="item">
+		<tr>
+			<td>${item.image}</td>
+			<td>${item.name}</td>
+			<td>${item.quantity}</td>
+			<td>${item.delay}</td>
+			<td><input type="number" value="1"></td>
+			<td><input type="checkbox" id="${item.id}"></td>
+		</tr>
+	</c:forEach>
+	</tbody>
 	</table>
+	
 	</form>
