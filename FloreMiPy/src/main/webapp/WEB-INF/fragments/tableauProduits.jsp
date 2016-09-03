@@ -13,7 +13,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<c:forEach items="${list}" var="item">
+	<c:forEach items="aa, aaa, aaaa" var="item">
 		<tr>
 			<td>${item.image}</td>
 			<td>${item.name}</td>
