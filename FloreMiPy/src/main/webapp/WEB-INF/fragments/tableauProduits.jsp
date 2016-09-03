@@ -15,10 +15,16 @@
 	<tbody>
 	<c:forEach items="aa, aaa, aaaa" var="item">
 		<tr>
-			<td>${item.image}</td>
+			<%-- <td>${item.image}</td>
 			<td>${item.name}</td>
 			<td>${item.quantity}</td>
 			<td>${item.delay}</td>
+			<td><input type="number" value="1"></td>
+			<td><input type="checkbox" id="${item.id}"></td> --%>
+			<td>Joly</td>
+			<td>fleur de prungom</td>
+			<td>12</td>
+			<td>la vie</td>
 			<td><input type="number" value="1"></td>
 			<td><input type="checkbox" id="${item.id}"></td>
 		</tr>
