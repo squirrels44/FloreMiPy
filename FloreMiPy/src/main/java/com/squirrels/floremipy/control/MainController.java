@@ -14,4 +14,9 @@ public class MainController {
         model.addAttribute("message", Messages.getString("MainController.3")); //$NON-NLS-1$ //$NON-NLS-2$
         return "welcomePage"; //$NON-NLS-1$
     }
+    
+    @RequestMapping(value = "/formulaireCreationProduit")
+    public String getFormulaireCreationProduit(Model model){
+    	return "formulaireCreationProduit";
+    }
 }
