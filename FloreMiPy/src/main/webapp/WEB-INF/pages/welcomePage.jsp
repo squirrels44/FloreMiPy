@@ -7,15 +7,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>FloreMiPy</title>
 <meta charset="utf-8">
-<link href="webapp/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="webapp/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <!-- js -->
 <script src="webapp/js/jquery.min.js"></script>
 <!-- //js -->
-<!-- for-mobile-apps -->
+
+<%-- <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Floral Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -23,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
+
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
@@ -35,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <!-- start-smoth-scrolling -->
-<title>${title}</title>
+<title>${title}</title> --%>
 </head>
 
 
