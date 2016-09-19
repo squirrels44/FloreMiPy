@@ -1,0 +1,14 @@
+.titre{
+	text-align:center;
+	text-decoration:underline;
+	padding:20px;
+}
+.form-button
+{
+	text-align:center;
+	padding:10px;
+}
+.cadre{
+	border:solid 2px green;
+	width:100%;
+}
