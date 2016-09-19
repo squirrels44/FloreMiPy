@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootstrap.css" rel="stylesheet">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<!-- formulaire barre de recherche + trier par + afficher nb elements -->
+		<form>
+			<input type="text" value="Recherche"/>
+			<select name="trierPar">
+    			<option value="nom">Nom</option>
+    			<option value="prix">Prix</option>
+    			<option value="stock">Stock</option>
+  			</select>
+  			<select name="nbAfficher">
+    			<option value="5">5</option>
+    			<option value="10">10</option>
+    			<option value="20">20</option>
+    			<option value="50">50</option>
+    			<option value="100">100</option>
+  			</select>
+		</form>
+	</div>
+	<div>
+		<!-- zone des resultats de la recherche -->
+		<div ng-repeat="">
+			<div class="col-md-2">
+				 <img src="imagesrc.jpg" class="img-rounded">
+			</div>
+			<div class="col-md-7">
+				Nom de la plante <br/>
+				Description de la plante
+			</div>
+			<div class="col-md-3">
+				<form>
+					<div classe ="col-md-6">
+						Quantité dispo<br/>
+						<input type="number" name="quantity" min="1"/>
+					</div>
+					<div classe ="col-md-6">
+						Prix<br/>
+						<input type="submit" value="&#xf217" class="btn fa-input">
+  							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+						</input>
+					</div>
+				</form>
+			</div>
+		</div>
+	
+	
+	
+	</div>
+
+
+</body>
+</html>
