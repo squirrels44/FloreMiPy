@@ -11,6 +11,6 @@
 <body>
 	<c:import url="/WEB-INF/pages/_menu.jsp" />
 	<br>
-	<c:import url="/WEB-INF/pages/form.jsp" />
+	<c:import url="/WEB-INF/pages/formulaireConnexion.jsp" />
 </body>
 </html>
