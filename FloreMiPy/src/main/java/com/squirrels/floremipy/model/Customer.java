@@ -1,4 +1,4 @@
-package model;
+package com.squirrels.floremipy.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
