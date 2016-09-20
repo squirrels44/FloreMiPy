@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+body {
+	background-image:url(/images/bckgr.jpg);
+	background-position:right;
+	background-repeat:no-repeat;
+	padding-left:5%;
+	padding-right:5%;
+}
+
+
+
+
+div.alignerADroite{
+	position:relative;
+ 
+ padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0;
+  margin-left: auto;
+  width:30%;
+  font-weight:bold;
+  color:#777;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+

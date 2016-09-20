@@ -10,9 +10,8 @@
       <li><a href="${pageContext.request.contextPath}/inscription">S'inscrire</a></li>
       <%-- </c:if> --%>
     </ul>
-  </div>
-  
-  <div class="container-fluid alignDroite">
+    
+    <div class="nav alignerADroite">
 	<a href="${pageContext.request.contextPath}/userInfo">User</a> 
 	<a href="${pageContext.request.contextPath}/caddie">Voir mon caddie</a> 
 	<a href="${pageContext.request.contextPath}/parametres">Paramètres</a>
@@ -21,5 +20,8 @@
      <a href="${pageContext.request.contextPath}/logout">Logout</a>
 	<%-- </c:if> --%>
 	</div>
+  </div>
+  
+  
   
 </nav>

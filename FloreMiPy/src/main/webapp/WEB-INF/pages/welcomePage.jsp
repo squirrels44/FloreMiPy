@@ -9,16 +9,16 @@
 <meta charset="utf-8">
 
 <!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
 <!-- Custom CSS -->
-<link href="css/style.css" rel="stylesheet">
+<link href="css/welcomePage.css" rel="stylesheet">
 
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <!-- js -->
-<script src="webapp/js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- //js -->
 
 <%-- <!-- for-mobile-apps -->
@@ -45,11 +45,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <title>${title}</title> --%>
 </head>
 
-
 <body>
+
 	<jsp:include page="_menu.jsp" />
 	<h1>${message}</h1>
-	<div id="page-wrapper">
+	<div id="page-wrapper" class="decor">
 		<c:import url="/WEB-INF/fragments/tableauProduits.jsp"> </c:import>
 	</div>
 </body>
