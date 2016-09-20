@@ -48,9 +48,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 
 	<jsp:include page="_menu.jsp" />
-	<h1>${message}</h1>
+	<h1 class="acceuil">${message}</h1>
 	<div id="page-wrapper" class="decor">
-		<c:import url="/WEB-INF/fragments/tableauProduits.jsp"> </c:import>
+		<c:import url="/fragments/tableauProduits.html"> </c:import>
 	</div>
 </body>
 </html>

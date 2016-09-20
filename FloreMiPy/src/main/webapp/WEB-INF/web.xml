@@ -20,6 +20,10 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     
+    <welcome-file-list>
+    <welcome-file>welcomePage</welcome-file>
+    </welcome-file-list>
+    
     <servlet-mapping>
     <!-- Les fichiers .css sont accessibles par défaut -->
   <servlet-name>default</servlet-name>
@@ -42,6 +46,12 @@
  <!-- Les fichiers .jpg sont accessibles par défaut -->
     <servlet-name>default</servlet-name>
     <url-pattern>*.jpg</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+ <!-- Les fragments .html sont accessibles par défaut -->
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.html</url-pattern>
  </servlet-mapping>
  
     <servlet-mapping>

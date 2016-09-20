@@ -1,13 +1,18 @@
 @CHARSET "ISO-8859-1";
 body {
-	background-image:url(/images/bckgr.jpg);
+	background-image:url("../images/abstract-background-65.jpg");
 	background-position:right;
 	background-repeat:no-repeat;
 	padding-left:5%;
 	padding-right:5%;
+	background-size: 100%;
 }
-
-
+.accueil{
+	background-color: white;
+}
+.decor{
+	background-color: white;
+}
 
 
 div.alignerADroite{
