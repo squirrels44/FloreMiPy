@@ -1,5 +1,6 @@
-
-	<div>
+	<script type="text/javascript" src="tableauProduits.js"></script>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<div ng-controller="ResearchController as RC">
 		<!-- formulaire barre de recherche + trier par + afficher nb elements -->
 		<form>
 			<input type="text" value="Recherche"/>
@@ -19,20 +20,20 @@
 	
 		<!-- zone des resultats de la recherche -->
 		<div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-2 col-xs-2">
 				 <img src="imagesrc.jpg" class="img-rounded">
 			</div>
-			<div class="col-md-7">
+			<div class="col-md-7 col-sm-7 col-xs-7">
 				Nom de la plante <br/>
 				Description de la plante
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-3 col-xs-3">
 				<form>
-					<div class ="col-md-6">
+					<div class ="col-md-6 col-sm-6 col-xs-6">
 						Quantité dispo<br/>
 						<input type="number" name="quantity" min="1"/>
 					</div>
-					<div class ="col-md-6">
+					<div class ="col-md-6 col-sm-6 col-xs-6">
 						Prix<br/>
 						<input type="submit" value="&#xf217" class="btn fa-input">
   							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -41,4 +42,5 @@
 			</div>
 		</div>
 	</div>
+
 
