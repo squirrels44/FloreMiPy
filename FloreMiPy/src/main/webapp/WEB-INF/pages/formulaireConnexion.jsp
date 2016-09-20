@@ -1,6 +1,7 @@
 <%@ page isELIgnored='false'%>
 <head>
 <script src="webapp/js/jquery.min.js"></script>
+
 <link type="text/css" rel="stylesheet" href="css/connexion.css" />
 </head>
 
