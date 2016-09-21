@@ -13,7 +13,7 @@ public class RechercheArticleDAO {
 	
 	
 	public List findArticles(){
-		String requete="SELECT com.squirrels.floremipy.dto.ArticleRechercheDTO(ar.imgsrc, ar.name, ar.description, ar.quantityInStock) FROM Article ar";
+		String requete="SELECT NEW com.squirrels.floremipy.dto.ArticleRechercheDTO(ar.imgsrc, ar.name, ar.description, ar.quantityInStock) FROM Article ar";
 		return em.createQuery(requete).getResultList();
 	}
 }
