@@ -19,7 +19,7 @@ public class ConnexionControler {
 		@RequestMapping(value = "/connexion", method = RequestMethod.GET)
 		public String getConnexion(Model model) {
 			logger.info("getConnexion");
-			model.addAttribute("form", new User(null, null));
+			model.addAttribute("formulaireConnexion", new User(null, null));
 			model.addAttribute("statusOK", false);
 			model.addAttribute("statusMessage", "");
 			return "connexion";

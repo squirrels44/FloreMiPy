@@ -2,13 +2,29 @@
 	text-align:center;
 	text-decoration:underline;
 	padding:20px;
+	color:#FFFFFF;
 }
+
 .form-button
 {
 	text-align:center;
 	padding:10px;
 }
+
 .cadre{
 	border:solid 2px green;
 	width:100%;
+	background-image:url(../images/coccinelle.jpg);
+	background-position:left center;
+	background-repeat:no-repeat;
+	background-size:100% auto;
+}
+
+.form-pwd{
+	text-align:center;
+	padding:10px;
+	color:red;
+	font-weight:bolder;
+	margin-left:30%;
+	margin-right:30%;
 }

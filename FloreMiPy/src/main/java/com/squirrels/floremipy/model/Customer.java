@@ -20,7 +20,11 @@ public class Customer implements Serializable {
 
 	private String firstName;
 
+	private String login;
+
 	private String name;
+
+	private String password;
 
 	private String phone;
 
@@ -56,12 +60,28 @@ public class Customer implements Serializable {
 		this.firstName = firstName;
 	}
 
+	public String getLogin() {
+		return this.login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
 	public String getName() {
 		return this.name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getPassword() {
+		return this.password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getPhone() {

@@ -34,17 +34,42 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     
+    <welcome-file-list>
+    <welcome-file>welcomePage</welcome-file>
+    </welcome-file-list>
+    
     <servlet-mapping>
+    <!-- Les fichiers .css sont accessibles par défaut -->
   <servlet-name>default</servlet-name>
   <url-pattern>*.css</url-pattern>
  </servlet-mapping>
 
  <servlet-mapping>
+ <!-- Les fichiers .js sont accessibles par défaut -->
     <servlet-name>default</servlet-name>
     <url-pattern>*.js</url-pattern>
  </servlet-mapping>
  
+  <servlet-mapping>
+ <!-- Les fichiers .png sont accessibles par défaut -->
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+ <!-- Les fichiers .jpg sont accessibles par défaut -->
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.jpg</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+ <!-- Les fragments .html sont accessibles par défaut -->
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.html</url-pattern>
+ </servlet-mapping>
+ 
     <servlet-mapping>
+    <!-- Tous les autres fichiers sont accessibles en passant par le dispatcher -->
         <servlet-name>mvc-dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
