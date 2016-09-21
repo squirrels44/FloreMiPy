@@ -1,6 +1,11 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
 <head>
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/welcomePage.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="styles.css" />
 <meta http-equiv="Content-Type" content="text/html">
 <title>Insert title here</title>
 <script type="text/javascript">
@@ -31,8 +36,10 @@
 
 
 <body>
+
 	 <jsp:include page="_menu.jsp" />
-	             
+	  
+	<div class="fondBlanc">           
 	<h1>Ajout d'un produit</h1>
 	           
 	<!-- /login?error=true -->
@@ -48,33 +55,33 @@
 	           
 	<h3>Complétez les différents champs du formulaire :</h3>
 	           
-	<form name="form" action="" method='POST'>
+	<form:form name="formProduit" action="ajoutProduit" modelAttribute="Article" method='POST'>
 		      
 		<table>
 			<tr>
 				<td>Type de produit *</td>
 				<td><input type='radio' id="typePlante" name='typeProduit'
-					value='plante' onclick="radioSelectPlant()">Plante <input
+					value='plante' onclick="radioSelectPlant()" checked>Plante <input
 					type='radio' id="typeObjet" name='typeProduit' value='objet'
 					onclick="radioSelectObject()"> Objet</td>
 			</tr>
 			<tr>
 				<td>Nom du produit *</td>
-				<td><input type='text' name='nomProduit' value=''></td>
+				<td><form:input type='text' name='nomProduit' path='nomProduit' required /></td>
 			</tr>
 			<tr>
 				<td>Catégorie *</td>
 				<td><select size="1" style="display: block"
 					id="categoriePlante">
 
-						<option value="1">Arbre d'ornement</option>
-						<option value="2">Arbuste</option>
-						<option value="3">Plante à fleurs</option>
-						<option value="4">Arbres fruitiers</option>
+						<option value="${arbreDOrnement}">Arbre d'ornement</option>
+						<option value="${arbuste}">Arbuste</option>
+						<option value="${planteAFleurs}">Plante à fleurs</option>
+						<option value="${arbreFruitier}">Arbre fruitier</option>
 				</select> <select size="1" style="display: none" id="categorieObjet">
-						<option value="5">Decoration</option>
-						<option value="6">Outils</option>
-						<option value="7">Consommables</option>
+						<option value="${decoration}">Decoration</option>
+						<option value="${outil}">Outil</option>
+						<option value="${consommable}">Consommable</option>
 
 				</select></td>
 			</tr>
@@ -83,7 +90,7 @@
 
 			<tr>
 				<td>Description:</td>
-				<td><textarea placeholder="description du produit"></textarea>
+				<td><form:textarea placeholder="description du produit" path='descriptionProduit'/>
 				</td>
 
 			</tr>
@@ -92,6 +99,7 @@
 			</tr>
 		</table>
 		  
-	</form>
+	</form:form>
+	</div>
 </body>
 </html>
