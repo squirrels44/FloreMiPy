@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO8859-1">
-<title>Mon espace</title>
+<title>FloreMiPy - Connexion</title>
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <!-- Custom CSS -->
