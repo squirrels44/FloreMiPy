@@ -134,12 +134,12 @@
     		<version>2.5.1</version>
 		</dependency>
 		
-		<!-- Surement necessairepour communiquer de services à json -->
-		<dependency>
+		<!-- Surement necessaire pour communiquer de services à json -->
+		<!-- <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
-            <scope>test</scope>
-        </dependency>
+            <version>2.2.0</version> 
+        </dependency> -->
          
     </dependencies>
      
