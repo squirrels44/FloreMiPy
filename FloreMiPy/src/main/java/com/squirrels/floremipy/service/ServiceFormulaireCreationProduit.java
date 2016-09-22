@@ -5,8 +5,11 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.squirrels.floremipy.dao.CreationProduitDAO;
+import com.squirrels.floremipy.dto.CreationProduitDTO;
 import com.squirrels.floremipy.model.Article;
 
 
@@ -14,26 +17,14 @@ import com.squirrels.floremipy.model.Article;
 public class ServiceFormulaireCreationProduit {
 	String PERSISTENCE_UNIT_NAME = "FloreMiPy";
 	
-
-	public void ajoutProduit(Article article){
-		EntityManagerFactory emf=Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
-		EntityManager em=emf.createEntityManager();
-		EntityTransaction transac = em.getTransaction();
-		
-		transac.begin();
-		
-		try{ 
-			em.persist(article);
-			transac.commit();
+@Autowired
+CreationProduitDAO creationProduitDAO;
+	
+	public String validationAjoutProduit(String name){
+		String res=null;
+		if(creationProduitDAO.articleExisteDeja(name)){
+			 res="Attention : le produit existe déjà!";
 		}
-		finally{
-
-			if(em.getTransaction().isActive()){
-				em.getTransaction().rollback();
-			}
-		}
-
-		em.close();
-		emf.close();
+		return res;		
 	}
 }

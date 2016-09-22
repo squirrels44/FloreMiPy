@@ -17,3 +17,4 @@ public class RechercheArticleDAO {
 		return em.createQuery(requete).getResultList();
 	}
 }
+
