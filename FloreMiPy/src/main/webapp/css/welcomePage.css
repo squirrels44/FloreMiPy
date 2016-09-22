@@ -6,7 +6,6 @@ body {
 	background-repeat: no-repeat;
 	padding: 2%;
 	background-size: cover;
-	
 }
 
 .fondBlanc {
@@ -15,37 +14,38 @@ body {
 	height: 98%;
 	border-radius: 20px;
 }
-@media screen and (min-width: 900px){
-div.alignerADroite {
-	
-	float:right;
-	
-	margin-right: 0;
-	margin-left: auto;
-	
-	font-weight: bold;
-	color: #777;
 
-	font-size: 16px;
-	box-sizing: border-box;
-}
+@media screen and (min-width: 900px) {
+	div.alignerADroite {
+		float: right;
+		margin-right: 0;
+		margin-left: auto;
+		font-weight: bold;
+		color: #777;
+		font-size: 16px;
+		box-sizing: border-box;
+		padding:10px;
+	}
 }
 
-
-.navbar,.navbar-default,.container-fluid
-,.navbar-header,.navbar-brand,.nav,.alignerADroite{
+.navbar, .navbar-default, .container-fluid, .navbar-header,
+	.navbar-brand, .nav, .alignerADroite {
 	background-color: #C4C371;
-	color:darkgrey;
+	color: darkgrey;
 }
+ul.menuHorizontal {
+		list-style-type: none;
+	} 
 
-@media screen and (max-width: 900px){
-div.alignerADroite {
-	font-weight: bold;
-	color: #777;
-	font-size: 16px;
-	box-sizing: border-box;
-}
-
+@media screen and (max-width: 900px) {
+	div.alignerADroite {
+		font-weight: bold;
+		color: #777;
+		font-size: 16px;
+		box-sizing: border-box;
+		padding:10px;
+	}
+	
 }
 /* .navbar.active,
 li.active,.navbar-default.active,.container-fluid.active
