@@ -1,6 +1,7 @@
 package com.squirrels.floremipy.control;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -17,6 +18,8 @@ import com.squirrels.floremipy.model.Article;
 @Controller
 public class creationProduitController {
 
+	@Autowired
+	ServiceFormulaireCreationProduit serviceFormulaireCreationProduit;
 
 	@RequestMapping(value = "/formulaireCreationProduit")
 	public String getFormulaireCreationProduit(Model model){

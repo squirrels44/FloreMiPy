@@ -74,14 +74,14 @@
 				<td><select size="1" style="display: block"
 					id="categoriePlante">
 
-						<option value="${arbreDOrnement}">Arbre d'ornement</option>
-						<option value="${arbuste}">Arbuste</option>
-						<option value="${planteAFleurs}">Plante à fleurs</option>
-						<option value="${arbreFruitier}">Arbre fruitier</option>
+						<option value="1">Arbre d'ornement</option>
+						<option value="2">Arbuste</option>
+						<option value="3">Plante à fleurs</option>
+						<option value="4">Arbre fruitier</option>
 				</select> <select size="1" style="display: none" id="categorieObjet">
-						<option value="${decoration}">Decoration</option>
-						<option value="${outil}">Outil</option>
-						<option value="${consommable}">Consommable</option>
+						<option value="5">Decoration</option>
+						<option value="6">Outil</option>
+						<option value="7">Consommable</option>
 
 				</select></td>
 			</tr>
