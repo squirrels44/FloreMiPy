@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.squirrels.floremipy.beans.User;
 
 @Controller
-public class inscriptionControler {
+public class InscriptionControler {
 
 
 		private final static Logger logger = 
-				Logger.getLogger(inscriptionControler.class.getName());
+				Logger.getLogger(InscriptionControler.class.getName());
 
 		@RequestMapping(value = "/inscription", method = RequestMethod.GET)
 		public String getInscription(Model model) {
