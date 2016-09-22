@@ -15,8 +15,4 @@ public class MainController {
         return "welcomePage"; //$NON-NLS-1$
     }
     
-    @RequestMapping(value = "/formulaireCreationProduit")
-    public String getFormulaireCreationProduit(Model model){
-    	return "formulaireCreationProduit";
-    }
 }
