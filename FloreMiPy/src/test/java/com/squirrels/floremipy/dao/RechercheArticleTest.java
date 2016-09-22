@@ -2,6 +2,7 @@ package com.squirrels.floremipy.dao;
 
 import static org.junit.Assert.*;
 
+import java.util.Iterator;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -10,6 +11,9 @@ import javax.persistence.Persistence;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import com.squirrels.floremipy.dto.ArticleRechercheDTO;
+import com.squirrels.floremipy.model.Article;
 
 
 public class RechercheArticleTest {
@@ -29,6 +33,13 @@ public class RechercheArticleTest {
 	public void testSelectNew(){
 		List liste1 =articleDAO.findArticles();
 		assertEquals(12,liste1.size());
+		
+		for (int i = 0; i < liste1.size(); i++) {
+			ArticleRechercheDTO a = (ArticleRechercheDTO) liste1.get(i);
+			System.out.println(a.getNom());
+		}
+		
+		
 	}
 
 	@AfterClass
